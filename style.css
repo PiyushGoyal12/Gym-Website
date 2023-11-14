@@ -4,11 +4,13 @@
 }
 body {
     background-color: rgba(0, 0, 0);
+    overflow-x: hidden;
 }
 .Herosection {
     background-image: url(Herosection.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 99vw;
+    width: 100vw;
     height: 120vh;
     opacity: 0.9;
 }
@@ -29,19 +31,25 @@ body {
     line-height: 6vh;
     margin: 4vh 0;
     padding: 0 1vw;
+    font-size: 1.3vw;
 }
-.links-list {
+#links-list {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 3vw;
 }
 .listitem {
     font-family: "Roboto", sans-serif;
-    font-size: 20px;
+    font-size: 1.3vw;
     font-weight: 400;
-    /* line-height: 40px; */
-    letter-spacing: 0em;
     text-align: center;
+}
+.navmenuitems {
+    color: white;
+    text-decoration: none;
+}
+.hamburger {
+    display: none;
 }
 .herosection {
     height: 100vh;
@@ -52,16 +60,16 @@ body {
 }
 .herosection-tagline {
     font-family: Alfa Slab One;
-    font-size: 100px;
+    font-size: 6vw;
     font-weight: 400;
-    line-height: 110px;
+    line-height: 6.5vw;
 }
 .herosection-define {
     color: #ffffff99;
     font-family: Roboto;
-    font-size: 25px;
+    font-size: 2vw;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 2.5vw;
 }
 .herosection-options {
     display: flex;
@@ -73,7 +81,7 @@ body {
     width: 12vw;
     line-height: 8vh;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 1.3vw;
     font-weight: 400;
 }
 .herosection-option1 {
@@ -86,7 +94,7 @@ body {
     color: white;
     text-decoration: none;
 }
-.Programs {
+#Programs {
     background-color: #18191e;
     border-radius: 2vw;
     margin: 8vw 3vw;
@@ -96,9 +104,9 @@ body {
 .Programs-heading {
     color: white;
     font-family: Alfa Slab One;
-    font-size: 65px;
+    font-size: 4vw;
     font-weight: 400;
-    line-height: 110px;
+    line-height: 7vw;
     letter-spacing: 0em;
     text-align: center;
 }
@@ -118,9 +126,9 @@ body {
 }
 .card-heading1 {
     font-family: Jura;
-    font-size: 26px;
+    font-size: 1.5vw;
     font-weight: 700;
-    line-height: 46px;
+    line-height: 3.1vw;
     text-align: center;
     border: 2px solid #ffffff80;
     padding: 0vh 1vw;
@@ -129,9 +137,9 @@ body {
 }
 .card-heading2 {
     font-family: Jura;
-    font-size: 36px;
+    font-size: 2.2vw;
     font-weight: 700;
-    line-height: 76px;
+    line-height: 5vw;
     letter-spacing: 0em;
     justify-content: center;
     display: flex;
@@ -139,16 +147,24 @@ body {
 .card-content-list {
     list-style: none;
     font-family: Jura;
-    font-size: 22px;
+    font-size: 1.4vw;
     font-weight: 700;
-    line-height: 50px;
+    line-height: 3.2vw;
     text-align: left;
 }
-.whyme {
+#whyme {
     background-image: url(image3.png);
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
+}
+.whyme-inner-div {
+    background-image: url(image2.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+.whyme-inner-inner-div {
+    height: 120vh;
 }
 .whyme-heading {
     justify-content: center;
@@ -202,7 +218,7 @@ body {
     line-height: 50px;
     color: white;
 }
-.testimonials {
+#testimonials {
     margin-top: 35vh;
     height: 100vh;
 }
@@ -251,26 +267,159 @@ body {
     font-weight: 400;
     line-height: 26px; /* 118.182% */
 }
-.contactme {
-}
+/* .contactme {
+} */
 .contactme-heading {
     color: #fff;
     text-align: center;
     font-family: Alfa Slab One;
-    font-size: 65px;
+    font-size: 3.5vw;
     font-style: normal;
     font-weight: 400;
     line-height: 110px; /* 169.231% */
 }
-/* ----------------------------------------------------------------------------------------------------------
-
-
----------------------------------------------------------------------------------------------------------- */
+.contact-me {
+    margin: 3vh 8vw;
+    height: 40vw;
+    display: flex;
+}
+.contactme-details {
+    width: 61%;
+    background-color: #18191e9c;
+}
+.contactme-detailss {
+    margin: 8% 3% 8% 0%;
+    background-image: url(./contactimage.png);
+    height: 75%;
+    width: 97%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.contactme-deatils-inputs {
+    padding: 10% 0% 10% 5%;
+}
+.contactme-inputs {
+    height: 4vw;
+    width: 41%;
+    margin-left: 4%;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #0071ff;
+    background-color: transparent;
+    color: white;
+}
+.contactme-inputlong {
+    height: 4vw;
+    width: 86%;
+    margin-left: 4%;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #0071ff;
+    background-color: transparent;
+    color: white;
+}
+.contactme-submit {
+    height: 9%;
+    margin: -7% 23% 3px 55%;
+}
+.contactme-submit-button {
+    border: none;
+    cursor: pointer;
+    background-color: #0071ff;
+    color: white;
+    height: 100%;
+    width: 100%;
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.contactme-detailsss {
+    background-color: #000000b5;
+    height: 100%;
+    width: 87%;
+}
+.contactme-details-heading1 {
+    font-family: Roboto;
+    font-size: 2.5vw;
+    font-weight: 400;
+    line-height: 6vw;
+    letter-spacing: 0em;
+    color: #0071ff;
+}
+.contactme-details-define {
+    font-family: Roboto;
+    font-size: 1.5vw;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: #ffffff70;
+}
+.contact-me-contactinfo {
+    width: 40%;
+    background-color: #18191e;
+    height: calc(100%-20vh);
+    padding: 10vh 4vw;
+}
+.contact-info-heading {
+    color: rgba(255, 255, 255, 0.66);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110px; /* 305.556% */
+}
+.contact-info-address {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 145.455% */
+    padding: 0vw 16vw 0vw 0vw;
+}
+.contact-info-call {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 181.818% */
+    margin-top: 5vh;
+}
+.contact-info-timmings {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 181.818% */
+    padding: 0 8vw 0 0;
+}
+.contact-info-follow-us {
+    align-items: center;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 181.818% */
+    margin-top: 5vh;
+}
+.contact-info-follow-icon {
+    margin-left: 2vh;
+    line-height: 50px;
+    height: 100%;
+}
 .footer {
     margin-top: 30vh;
-    height: 40vh;
+    height: fit-content;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 4vh 7vw;
     background-color: #18191e;
 }
@@ -324,8 +473,175 @@ body {
     display: block;
     color: rgba(255, 255, 255, 0.66);
     text-align: center;
+    justify-content: center;
 }
 .footer-Socials-content-icons {
     display: block;
     padding: 5% 40%;
+}
+@media only screen and (max-width: 450px) {
+    .Herosection {
+        height: 40vh;
+    }
+    .nav {
+        height: 8vh;
+        line-height: 8vh;
+        background-color: transparent;
+    }
+    .getstarted {
+        margin: 2vh 0;
+        line-height: 4vh;
+        padding: 0 3vw;
+        font-size: 2.5vw;
+    }
+    #links-list {
+        position: fixed;
+        right: 0;
+        display: none;
+        width: fit-content;
+        margin-top: 8vh;
+        margin-left: 20vw;
+        gap: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    .listitem {
+        font-size: 3vw;
+        background-color: rgba(0, 0, 0);
+        width: 30vw;
+        margin-right: 0;
+    }
+    .hamburger {
+        text-align: right;
+        display: grid;
+        position: fixed;
+        right: 10vw;
+        background-color: transparent !important;
+    }
+    .herosection {
+        margin: 0;
+        padding: 5vh 10vw;
+        height: 20vh;
+    }
+    .herosection-define {
+        font-size: 3vw;
+        line-height: 4vw;
+        margin-top: 2vh;
+    }
+    .herosection-options {
+        display: grid;
+        padding: 3vh 25vw;
+    }
+    .herosection-option {
+        height: 4vh;
+        width: 30vw;
+        line-height: 4vh;
+        font-size: 3vw;
+    }
+    .herosection-option2 {
+        display: none;
+    }
+    #Programs {
+        background-color: transparent;
+        margin: 2vh 10vw;
+        padding: 0;
+        height: 140vh;
+    }
+    .Programs-heading {
+        font-size: 6.5vw;
+        line-height: 10vw;
+    }
+    .cards {
+        display: grid;
+        justify-content: center;
+    }
+    .card {
+        background-color: #18191e;
+        margin-top: 10vh;
+        padding: 4vh 8vw;
+        border-radius: 4vh;
+    }
+    .card-down {
+        margin-top: 10vh;
+    }
+    .card-heading1 {
+        font-size: 5vw;
+        line-height: 10vw;
+    }
+    .card-heading2 {
+        font-size: 6vw;
+        line-height: 12vw;
+    }
+    .card-content-list {
+        font-size: 5vw;
+        line-height: 10vw;
+    }
+    #whyme {
+        height: 50vh;
+    }
+    .whyme-inner-div {
+        background-size: 0vw;
+    }
+    .whyme-inner-inner-div {
+        height: 50vh;
+    }
+    .whyme-heading {
+        font-size: 10vw;
+        line-height: 12vh;
+    }
+    .whyme-boxes {
+        margin: 1vw;
+    }
+    .whyme-box {
+        width: 30vw;
+        height: 10vh;
+        left: 0;
+        margin: 4vw 6.5vw;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .whyme-box-logo {
+        height: 4vh;
+        width: 10vw;
+    }
+    .whyme-box-heading {
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+    .whyme-box-define {
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+    #testimonials {
+        margin-top: 10vh;
+        height: 180vh;
+    }
+    .testimonials-heading {
+        font-size: 8vw;
+        line-height: 10vw;
+    }
+    .testimonials-cards {
+        display: grid;
+    }
+    #contactme {
+        display: none;
+    }
+    .footer {
+        display: grid;
+        height: fit-content;
+    }
+    .footerc {
+        width: 100%;
+        margin-bottom: 4vh;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer-Reach-us-content {
+        text-align: center;
+    }
+    .footer-Contact-us-content {
+        text-align: center;
+    }
+    .footer-Socials-content-icons {
+        padding: 5% 45%;
+    }
 }

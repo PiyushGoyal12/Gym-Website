@@ -11,20 +11,47 @@
             href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inter&family=Jura:wght@700&family=Roboto&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
     </head>
     <body>
         <div class="Herosection">
             <div class="nav">
-                <div class="getstarted">GET STARTED</div>
-                <div class="links">
-                    <ul class="links-list">
-                        <li class="listitem">Home</li>
-                        <li class="listitem">Programs</li>
-                        <li class="listitem">testimonials</li>
-                        <li class="listitem">About</li>
-                        <li class="listitem">Contact</li>
-                    </ul>
+                <div class="getstarted">
+                    <a href="#contactme" class="navmenuitems">GET STARTED</a>
                 </div>
+                <ul id="links-list">
+                    <li class="listitem">
+                        <a href="" class="navmenuitems">Home</a>
+                    </li>
+                    <li class="listitem">
+                        <a href="#Programs" class="navmenuitems">Programs</a>
+                    </li>
+                    <li class="listitem">
+                        <a href="#testimonials" class="navmenuitems"
+                            >Testimonials</a
+                        >
+                    </li>
+                    <li class="listitem">
+                        <a href="#whyme" class="navmenuitems">About</a>
+                    </li>
+                    <li class="listitem">
+                        <a href="#contactme" class="navmenuitems">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <a
+                        href="javascript:void(0);"
+                        class="icon"
+                        onclick="myFunction()"
+                        style="color: white"
+                    >
+                        <span class="material-symbols-outlined"> menu </span>
+                    </a>
+                </div>
+                <script src="new.js"></script>
             </div>
             <div class="herosection">
                 <div class="herosection-tagline">
@@ -36,15 +63,19 @@
                 </div>
                 <div class="herosection-options">
                     <div class="herosection-option1 herosection-option">
-                        <a href="" class="herosectionoptions">GET STARTED</a>
+                        <a href="#whyme" class="herosectionoptions"
+                            >GET STARTED</a
+                        >
                     </div>
                     <div class="herosection-option2 herosection-option">
-                        <a href="" class="herosectionoptions">Contact</a>
+                        <a href="#contactme" class="herosectionoptions"
+                            >Contact</a
+                        >
                     </div>
                 </div>
             </div>
         </div>
-        <div class="Programs">
+        <div id="Programs">
             <h1 class="Programs-heading">Explore Our Programs</h1>
             <div class="cards">
                 <div class="card card-down">
@@ -82,16 +113,10 @@
                 </div>
             </div>
         </div>
-        <div class="whyme">
-            <div style="background-color: rgba(0, 0, 0, 0.9)">
-                <div
-                    style="
-                        background-image: url(image2.png);
-                        background-repeat: no-repeat;
-                        position: relative;
-                    "
-                >
-                    <div style="height: 120vh">
+        <div id="whyme">
+            <div style="background-color: rgba(0, 0, 0, 0.8)">
+                <div class="whyme-inner-div">
+                    <div class="whyme-inner-inner-div">
                         <div class="whyme-heading">WHY ME ?</div>
                         <div class="whyme-boxes">
                             <div class="whyme-box">
@@ -135,7 +160,7 @@
                 </div>
             </div>
         </div>
-        <div class="testimonials">
+        <div id="testimonials">
             <div class="testimonials-heading">TESTIMONIALS</div>
             <div class="testimonials-cards">
                 <div class="testimonials-card">
@@ -212,30 +237,114 @@
                 </div>
             </div>
         </div>
-        <div class="contactme">
+        <div id="contactme">
             <div class="contactme-heading">CONTACT ME</div>
+            <div class="contact-me">
+                <div class="contactme-details">
+                    <div class="contactme-detailss">
+                        <div class="contactme-detailsss">
+                            <div class="contactme-details-heading1">
+                                Just Say Hii !
+                            </div>
+                            <div class="contactme-details-define">
+                                Tell me about your fitness goals and I will
+                                contact you soon.
+                            </div>
+                            <div class="contactme-deatils-inputs">
+                                <div class="contactme-details-inputl1">
+                                    <input
+                                        type="text"
+                                        placeholder="First Name"
+                                        class="contactme-inputs"
+                                    /><input
+                                        type="text"
+                                        placeholder="Last Name"
+                                        class="contactme-inputs"
+                                    />
+                                </div>
+                                <div class="contactme-details-inputl2">
+                                    <input
+                                        type="text"
+                                        placeholder="Email"
+                                        class="contactme-inputs"
+                                    /><input
+                                        type="text"
+                                        placeholder="Phone No."
+                                        class="contactme-inputs"
+                                    />
+                                </div>
+                                <div class="contactme-details-inputl3">
+                                    <input
+                                        type="text"
+                                        placeholder="Message"
+                                        class="contactme-inputlong"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contactme-submit">
+                        <input
+                            type="button"
+                            value="Submit"
+                            class="contactme-submit-button"
+                        />
+                    </div>
+                </div>
+                <div class="contact-me-contactinfo">
+                    <div class="contact-info-heading">Contact Information</div>
+                    <div class="contact-info-address">
+                        242, Darpan Street, Kharar , 1710 <br />India
+                    </div>
+                    <div class="contact-info-call">
+                        Call Us : (+91) 63XYZ90128
+                    </div>
+                    <div class="contact-info-timmings">
+                        We are open Monday to Saturday: 9:00 AM to 9:00 PM
+                    </div>
+                    <div class="contact-info-follow-us">
+                        Follow Us:<img
+                            src="fb.png"
+                            alt=""
+                            class="contact-info-follow-icon"
+                        /><img
+                            src="ig.png"
+                            alt=""
+                            class="contact-info-follow-icon"
+                        />
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="footer">
             <div class="footer-Quick-Links footerc">
                 <div class="footer-heading">Quick Links</div>
                 <ul class="footer-quick-links-list">
                     <li class="footer-quick-links-listitem">
-                        <a href="" class="footer-quick-links-listitemlink"
+                        <a
+                            href="#Programs"
+                            class="footer-quick-links-listitemlink"
                             >Programs</a
                         >
                     </li>
                     <li class="footer-quick-links-listitem">
-                        <a href="" class="footer-quick-links-listitemlink"
+                        <a
+                            href="#contactme"
+                            class="footer-quick-links-listitemlink"
                             >Talk to us</a
                         >
                     </li>
                     <li class="footer-quick-links-listitem">
-                        <a href="" class="footer-quick-links-listitemlink"
-                            >testimonials</a
+                        <a
+                            href="#testimonials"
+                            class="footer-quick-links-listitemlink"
+                            >Testimonials</a
                         >
                     </li>
                     <li class="footer-quick-links-listitem">
-                        <a href="" class="footer-quick-links-listitemlink"
+                        <a
+                            href="#contactme"
+                            class="footer-quick-links-listitemlink"
                             >Feedback</a
                         >
                     </li>
